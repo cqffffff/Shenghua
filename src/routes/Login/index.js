@@ -9,6 +9,7 @@ import {preloadingImages} from '../../utils/utils'
 import 'animate.css'
 import LoginForm from './LoginForm'
 import RegisterForm from './RegisterForm'
+import bg1 from "../../assets/img/bg1.jpg";
 
 const url = 'https://github.com/zhangZhiHao1996/image-store/blob/master/react-admin-master/bg1.jpg?raw=true'
 const imgs = [
@@ -17,10 +18,6 @@ const imgs = [
   'https://github.com/zhangZhiHao1996/image-store/blob/master/react-admin-master/slide3.jpg?raw=true',
   'https://github.com/zhangZhiHao1996/image-store/blob/master/react-admin-master/slide4.jpg?raw=true'
 ]
-
-
-
-
 
 @withRouter @inject('appStore') @observer
 class Login extends React.Component {
@@ -123,7 +120,7 @@ const styles = {
     width: '100vw',
     height: '100vh',
     // backgroundImage: 'url(https://github.com/zhangZhiHao1996/image-store/blob/master/react-admin-master/bg5.jpg?raw=true)',
-    backgroundImage: 'url(https://github.com/zhangZhiHao1996/image-store/blob/master/react-admin-master/bg1.jpg?raw=true)',
+    backgroundImage: `url(${bg1})`,
     backgroundSize: '100% 100%',
     transition:'all .5s'
   },

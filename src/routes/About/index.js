@@ -1,14 +1,11 @@
 import React from 'react'
-import CustomBreadcrumb from '../../components/CustomBreadcrumb/index'
-import TypingCard from '../../components/TypingCard'
-
+import {Card} from 'antd'
 export default class About extends React.Component{
   render(){
     return (
-      <div>
-        <CustomBreadcrumb arr={['关于']}/>
-        <TypingCard source={'这个人很懒，什么也没留下...'} title='关于' />
-      </div>
+      <Card title='基本用法'>
+        <img style={{width: '100%', height: '100%'}} src={require('../../assets/img/teammember.jpg')} alt=""/>
+      </Card>
     )
   }
 }
